@@ -24,7 +24,7 @@ class Solution:
                 root.val=successor.val
                 root.right=self.deleteNode(root.right,successor.val)
         return root   
-    # To find in-order successor
+    
     def findmin(self, node:Optional[TreeNode]) -> Optional[TreeNode]:
             while node.left:
                 node=node.left
